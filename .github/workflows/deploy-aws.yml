@@ -6,7 +6,7 @@
         - main
   jobs:
     test:
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-18.04
       name: Test
       steps:
         - run: echo "running test"
@@ -21,7 +21,7 @@
 
     build:
       name: Build
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-18.04
       needs: test
       steps:
         - run: echo "Building package"
@@ -47,7 +47,7 @@
 
     deploy:
       name: Deploy to Server
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-18.04
       needs: build
       steps:
         - run: echo "Deploying to Server"
