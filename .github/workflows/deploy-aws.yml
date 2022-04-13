@@ -60,7 +60,7 @@
             username: ${{ secrets.EC2_SSH_USERNAME }}
             key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
             script: |
-              - docker stop spring-helloworld
-              - docker rmi rofiksupriant/spring-helloworld:latest
-              - docker pull rofiksupriant/spring-helloworld:latest
-              - docker run -d --rm --name spring-helloworld -p 80:8080 -p 443:8080 rofiksupriant/spring-helloworld:latest
+              docker stop spring-helloworld
+              docker rmi rofiksupriant/spring-helloworld:latest
+              docker pull rofiksupriant/spring-helloworld:latest
+              docker run -d --rm --name spring-helloworld -p 80:8080 -p 443:8080 rofiksupriant/spring-helloworld:latest
