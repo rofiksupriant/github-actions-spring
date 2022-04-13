@@ -63,4 +63,4 @@
               docker stop spring-helloworld
               docker rmi  rofiksupriant/spring-helloworld:latest
               docker pull  rofiksupriant/spring-helloworld:latest
-              docker run -d --rm --name spring-helloworld -p 80:8080 -p 443:8080 --network kampus_merdeka rofiksupriant/spring-helloworld:latest
+              docker run -d --rm --name spring-helloworld -p 80:8080 -p 443:8080 rofiksupriant/spring-helloworld:latest
